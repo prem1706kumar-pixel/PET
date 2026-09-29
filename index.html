@@ -128,6 +128,52 @@
     .delete-button:hover { background: #fff0e9; color: #c7614f; }
     .empty-state { padding: 30px 12px; color: var(--muted); font-size: 12px; text-align: center; }
     .empty-state strong { display: block; margin-bottom: 5px; color: var(--ink); font-size: 13px; }
+    .page-view[hidden], .hidden { display: none !important; }
+    .reports-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: 16px; margin-top: 17px; align-items: start; }
+    .report-bars { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); align-items: end; gap: 12px; min-height: 205px; padding-top: 20px; }
+    .report-month { display: grid; grid-template-rows: 150px auto; gap: 8px; min-width: 0; align-items: end; text-align: center; }
+    .report-bar-track { height: 150px; display: flex; align-items: flex-end; justify-content: center; }
+    .report-bar { width: min(27px, 68%); height: var(--bar-height); min-height: 4px; border-radius: 6px 6px 3px 3px; background: var(--bar-color); transition: height .3s ease; }
+    .report-month-label { color: var(--muted); font-size: 9px; }
+    .report-category-list { display: grid; gap: 15px; margin-top: 20px; }
+    .report-category-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 10px; }
+    .report-category-name { display: flex; align-items: center; gap: 7px; color: #68736a; }
+    .report-category-name .legend-dot { flex: 0 0 8px; }
+    .report-category-total { font-weight: 700; }
+    .report-category-track { height: 5px; overflow: hidden; margin-top: 7px; border-radius: 5px; background: #eff0e9; }
+    .report-category-fill { height: 100%; border-radius: inherit; }
+    .report-insight { display: flex; align-items: flex-start; gap: 11px; margin-top: 16px; padding: 15px; border-radius: 9px; background: #edf4e7; }
+    .report-insight-icon { width: 28px; height: 28px; flex: 0 0 28px; display: grid; place-items: center; border-radius: 8px; background: white; }
+    .report-insight strong { display: block; font-size: 11px; }
+    .report-insight p { margin: 4px 0 0; color: #71806f; font-size: 10px; line-height: 1.5; }
+    .goals-hero { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 145px; padding: 25px 30px; border-radius: 13px; background: #f6eecf; }
+    .goals-hero h2 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 23px; font-weight: 600; }
+    .goals-hero p { max-width: 430px; margin: 7px 0 0; color: #77745f; font-size: 11px; line-height: 1.6; }
+    .goals-hero-total { min-width: 155px; text-align: right; }
+    .goals-hero-total span { color: #77745f; font-size: 10px; }
+    .goals-hero-total strong { display: block; margin-top: 4px; font-family: Fraunces, Georgia, serif; font-size: 29px; font-weight: 600; }
+    .goal-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 17px; }
+    .goal-card { min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 11px; background: var(--white); animation: rise-in .28s ease both; }
+    .goal-card-head { display: flex; align-items: flex-start; gap: 11px; }
+    .goal-card-icon { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 11px; background: #eaf3e9; font-size: 18px; }
+    .goal-card-title { min-width: 0; flex: 1; }
+    .goal-card-title h3 { overflow: hidden; margin: 1px 0 0; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+    .goal-card-title span { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; }
+    .goal-delete { width: 26px; height: 26px; flex: 0 0 26px; border: 0; border-radius: 6px; background: transparent; color: #9aa095; cursor: pointer; font-size: 15px; }
+    .goal-delete:hover { background: #fff0e9; color: #c7614f; }
+    .goal-progress-copy { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 21px; }
+    .goal-progress-copy strong { font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 600; }
+    .goal-progress-copy span { color: var(--muted); font-size: 10px; }
+    .goal-progress-track { height: 8px; overflow: hidden; margin-top: 9px; border-radius: 8px; background: #edf0e8; }
+    .goal-progress-fill { height: 100%; border-radius: inherit; background: var(--green); transition: width .3s ease; }
+    .goal-fund-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px; margin-top: 16px; }
+    .goal-fund-form input { width: 100%; min-width: 0; height: 35px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; background: white; color: var(--ink); font-size: 10px; }
+    .goal-fund-form button { height: 35px; padding: 0 11px; border: 0; border-radius: 6px; background: #eaf3e9; color: var(--green); cursor: pointer; font-size: 10px; font-weight: 700; }
+    .goal-fund-form button:hover { background: #dcefe1; }
+    .goal-empty { grid-column: 1 / -1; padding: 39px 20px; border: 1px dashed #dce2d6; border-radius: 11px; background: rgba(255,254,250,.65); text-align: center; }
+    .goal-empty-mark { font-size: 25px; }
+    .goal-empty h2 { margin: 9px 0 0; font-family: Fraunces, Georgia, serif; font-size: 19px; font-weight: 600; }
+    .goal-empty p { max-width: 330px; margin: 6px auto 13px; color: var(--muted); font-size: 10px; line-height: 1.55; }
 
     .modal-backdrop { position: fixed; z-index: 5; inset: 0; display: none; place-items: center; padding: 18px; background: rgba(24, 43, 35, .34); backdrop-filter: blur(4px); }
     .modal-backdrop.open { display: grid; animation: fade-in .18s ease; }
@@ -165,8 +211,8 @@
       .mobile-brand { display: flex; align-items: center; justify-content: space-between; padding: 1px 3px 9px; }
       .mobile-brand .brand { display: flex; padding: 0; }
       .nav-label, .side-note, .profile { display: none; }
-      .nav { grid-template-columns: repeat(3, 1fr); gap: 4px; }
-      .nav a { justify-content: center; min-height: 35px; gap: 6px; padding: 0 7px; font-size: 10px; }
+      .nav { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; }
+      .nav a { flex-direction: column; justify-content: center; min-height: 42px; gap: 1px; padding: 4px 2px; font-size: 9px; line-height: 1.1; text-align: center; }
       .nav-icon { font-size: 13px; }
       .main { padding: 25px 18px 35px; }
       .topbar { align-items: flex-start; margin-bottom: 22px; }
@@ -178,6 +224,8 @@
       .welcome { min-height: 125px; padding: 20px; }
       .welcome-amount { min-width: 130px; }
       .content-grid { grid-template-columns: 1fr; }
+      .reports-grid { grid-template-columns: 1fr; }
+      .goal-list { grid-template-columns: 1fr; }
       .chart-area { justify-content: flex-start; gap: clamp(25px, 9vw, 70px); }
       .stats { gap: 9px; }
       .stat { min-height: 105px; padding: 14px; }
@@ -189,8 +237,9 @@
       h1 { font-size: 27px; }
       .eyebrow { font-size: 9px; }
       .month-picker input { width: 105px; }
-      .add-button { width: 36px; padding: 0; font-size: 0; }
-      .add-button::first-letter { font-size: 17px; }
+      .add-button { width: 36px; padding: 0; font-size: 10px; }
+      .add-button #primary-label { display: none; }
+      .add-button #primary-icon { font-size: 18px; }
       .welcome { min-height: 132px; align-items: flex-start; flex-direction: column; gap: 12px; padding: 17px; }
       .welcome-copy h2 { font-size: 20px; }
       .welcome-copy p { max-width: 290px; margin-top: 5px; font-size: 10px; }
@@ -218,6 +267,12 @@
       .transaction-amount { min-width: 58px; font-size: 10px; }
       .budget-panel { padding: 15px 13px; }
       .budget-edit input { width: 68px; }
+      .goals-hero { align-items: flex-start; flex-direction: column; gap: 12px; padding: 19px; }
+      .goals-hero h2 { font-size: 20px; }
+      .goals-hero-total { min-width: 0; text-align: left; }
+      .goals-hero-total strong { font-size: 23px; }
+      .report-bars { gap: 6px; }
+      .report-category-head { font-size: 9px; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
   </style>
@@ -232,23 +287,26 @@
       </div>
       <div class="nav-label">Workspace</div>
       <nav class="nav">
-        <a class="active" href="#overview"><span class="nav-icon">◫</span>Overview</a>
-        <a href="#transactions"><span class="nav-icon">↗</span>Transactions</a>
-        <a href="#budget"><span class="nav-icon">◎</span>My budget</a>
+        <a class="active" data-page="overview" href="#overview"><span class="nav-icon">◫</span>Overview</a>
+        <a data-page="transactions" href="#transactions"><span class="nav-icon">↗</span>Transactions</a>
+        <a data-page="budget" href="#budget"><span class="nav-icon">◎</span>My budget</a>
+        <a data-page="reports" href="#reports"><span class="nav-icon">▥</span>Reports</a>
+        <a data-page="goals" href="#goals"><span class="nav-icon">✳</span>Savings goals</a>
       </nav>
       <div class="side-note"><span class="side-note-mark" aria-hidden="true">🌱</span><strong>Small steps add up.</strong><p>A little awareness today makes room for the things you love tomorrow.</p></div>
       <div class="profile"><span class="avatar" aria-hidden="true">🌼</span><div><div class="profile-name">Your pocket space</div><div class="profile-label">Personal account</div></div></div>
     </aside>
 
-    <main class="main" id="overview">
+    <main class="main">
       <header class="topbar">
-        <div><div class="eyebrow" id="today-label">YOUR MONEY, YOUR RHYTHM</div><h1>Good things, accounted for.</h1></div>
+        <div><div class="eyebrow" id="page-eyebrow">YOUR MONEY, YOUR RHYTHM</div><h1 id="page-title">Good things, accounted for.</h1></div>
         <div class="top-actions">
           <label class="month-picker"><span>Month</span><input id="month-picker" type="month" aria-label="Choose a month"></label>
-          <button class="add-button" id="open-modal" type="button"><span aria-hidden="true">＋</span> Add expense</button>
+          <button class="add-button" id="primary-action" type="button" aria-label="Add expense"><span aria-hidden="true" id="primary-icon">＋</span><span id="primary-label">Add expense</span></button>
         </div>
       </header>
 
+      <section class="page-view" id="overview" data-page-view="overview">
       <section class="welcome" aria-label="Monthly spending summary">
         <div class="welcome-copy"><h2>A little clarity goes a long way.</h2><p>Your spending, all in one place. Take a breath, see where it went, and keep moving toward what matters.</p></div>
         <div class="welcome-amount"><span id="period-label">Spent this month</span><strong id="hero-total">$0.00</strong></div>
@@ -276,7 +334,53 @@
           <div class="transaction-list" id="transaction-list" aria-live="polite"></div>
         </section>
       </div>
+      </section>
+
+      <section class="page-view" id="reports" data-page-view="reports" hidden>
+        <section class="stats" aria-label="Monthly report summary">
+          <article class="stat"><div class="stat-top"><span>Spent this month</span><span class="stat-icon green" aria-hidden="true">↗</span></div><div class="stat-value" id="report-total">$0.00</div><div class="stat-foot" id="report-expense-count">0 expenses</div></article>
+          <article class="stat"><div class="stat-top"><span>Previous month</span><span class="stat-icon blue" aria-hidden="true">◷</span></div><div class="stat-value" id="report-previous">$0.00</div><div class="stat-foot" id="report-previous-label">Prior month total</div></article>
+          <article class="stat"><div class="stat-top"><span>Month over month</span><span class="stat-icon coral" aria-hidden="true">⌁</span></div><div class="stat-value" id="report-change">0%</div><div class="stat-foot">Compared with previous month</div></article>
+        </section>
+        <div class="reports-grid">
+          <section class="panel" aria-labelledby="trend-title">
+            <div class="panel-heading"><div><h2 id="trend-title">Spending over time</h2><div class="panel-subtitle">Six-month view ending in <span id="trend-period"></span></div></div></div>
+            <div class="report-bars" id="monthly-trend" role="img" aria-label="Monthly spending bar chart"></div>
+          </section>
+          <section class="panel" aria-labelledby="report-categories-title">
+            <div class="panel-heading"><div><h2 id="report-categories-title">Category breakdown</h2><div class="panel-subtitle" id="report-category-period">This month's spending</div></div></div>
+            <div class="report-category-list" id="report-categories"></div>
+          </section>
+        </div>
+        <div class="report-insight" id="report-insight"><span class="report-insight-icon" aria-hidden="true">✦</span><div><strong id="report-insight-title">Your month at a glance</strong><p id="report-insight-copy"></p></div></div>
+      </section>
+
+      <section class="page-view" id="goals" data-page-view="goals" hidden>
+        <section class="goals-hero" aria-label="Savings goals summary">
+          <div><h2>Make room for what matters.</h2><p>Small, steady steps turn the things you’re saving for into things you can look forward to.</p></div>
+          <div class="goals-hero-total"><span>Total saved toward your goals</span><strong id="goals-total-saved">$0.00</strong></div>
+        </section>
+        <section class="stats" aria-label="Savings goal totals">
+          <article class="stat"><div class="stat-top"><span>Saved so far</span><span class="stat-icon green" aria-hidden="true">↗</span></div><div class="stat-value" id="goal-saved-stat">$0.00</div><div class="stat-foot">Across all your goals</div></article>
+          <article class="stat"><div class="stat-top"><span>Still to save</span><span class="stat-icon coral" aria-hidden="true">✳</span></div><div class="stat-value" id="goal-remaining-stat">$0.00</div><div class="stat-foot">To reach your targets</div></article>
+          <article class="stat"><div class="stat-top"><span>Active goals</span><span class="stat-icon blue" aria-hidden="true">◎</span></div><div class="stat-value" id="goal-count-stat">0</div><div class="stat-foot" id="goal-completed-foot">Start with one thing you want</div></article>
+        </section>
+        <div class="goal-list" id="goal-list" aria-live="polite"></div>
+      </section>
     </main>
+  </div>
+  <div class="modal-backdrop" id="goal-modal-backdrop" role="presentation">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="goal-form-title">
+      <div class="modal-head"><h2 id="goal-form-title">Create a savings goal</h2><button class="close-button" id="close-goal-modal" type="button" aria-label="Close">×</button></div>
+      <form id="goal-form">
+        <div class="form-grid">
+          <div class="field full"><label for="goal-name">What are you saving for?</label><input id="goal-name" name="name" type="text" placeholder="e.g. A weekend away" maxlength="50" required></div>
+          <div class="field"><label for="goal-target">Target amount</label><input id="goal-target" name="target" type="number" min="1" step="1" placeholder="0.00" required></div>
+          <div class="field"><label for="goal-deadline">Target date</label><input id="goal-deadline" name="deadline" type="date"></div>
+        </div>
+        <div class="form-actions"><button class="cancel-button" id="cancel-goal-modal" type="button">Cancel</button><button class="save-button" type="submit">Create goal</button></div>
+      </form>
+    </section>
   </div>
 
   <div class="modal-backdrop" id="modal-backdrop" role="presentation">
@@ -299,6 +403,7 @@
     (() => {
       const STORAGE_KEY = "pocketful-expenses-v1";
       const BUDGET_KEY = "pocketful-budget-v1";
+      const GOALS_KEY = "pocketful-goals-v1";
       const categories = {
         Groceries: { icon: "🥑", color: "#73b88c", tint: "#e9f4e9" },
         Dining: { icon: "🍜", color: "#f18066", tint: "#fff0e9" },
@@ -315,6 +420,9 @@
       const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
       const storedExpenses = localStorage.getItem(STORAGE_KEY);
       let expenses = storedExpenses ? JSON.parse(storedExpenses) : null;
+      const storedGoals = localStorage.getItem(GOALS_KEY);
+      let goals = storedGoals ? JSON.parse(storedGoals) : [];
+      if (!Array.isArray(goals)) goals = [];
       let budget = Number(localStorage.getItem(BUDGET_KEY)) || 2500;
       let selectedMonth = dateKey(new Date()).slice(0, 7);
       let toastTimer;
@@ -335,7 +443,9 @@
       }
 
       const persist = () => localStorage.setItem(STORAGE_KEY, JSON.stringify(expenses));
-      const monthExpenses = () => expenses.filter((expense) => expense.date.slice(0, 7) === selectedMonth);
+      const persistGoals = () => localStorage.setItem(GOALS_KEY, JSON.stringify(goals));
+      const expensesForMonth = (month) => expenses.filter((expense) => expense.date.slice(0, 7) === month);
+      const monthExpenses = () => expensesForMonth(selectedMonth);
       const formatMonth = (month) => new Date(`${month}-02T12:00:00`).toLocaleDateString("en-US", { month: "long", year: "numeric" });
       const toast = (message) => {
         $("toast").textContent = message;
@@ -388,6 +498,8 @@
         $("donut").setAttribute("aria-label", totals.length ? `Spending by category: ${totals.map((item) => `${item.name} ${money(item.total)}`).join(", ")}` : "No spending this month");
         $("legend").innerHTML = totals.length ? totals.slice(0, 5).map((item) => `<div class="legend-row"><span class="legend-dot" style="background:${categories[item.name].color}"></span><span class="legend-name">${item.name}</span><span class="legend-value">${money(item.total, 0)}</span></div>`).join("") : '<div class="empty-chart">Add an expense to see your breakdown.</div>';
         renderTransactions();
+        renderReports();
+        renderGoals();
       }
 
       function renderTransactions() {
@@ -407,6 +519,76 @@
         }).join("");
       }
 
+      function renderReports() {
+        const items = expensesForMonth(selectedMonth);
+        const total = items.reduce((sum, item) => sum + Number(item.amount), 0);
+        const previousDate = new Date(Number(selectedMonth.slice(0, 4)), Number(selectedMonth.slice(5, 7)) - 2, 1);
+        const previousMonth = dateKey(previousDate).slice(0, 7);
+        const previousTotal = expensesForMonth(previousMonth).reduce((sum, item) => sum + Number(item.amount), 0);
+        const change = previousTotal ? (total - previousTotal) / previousTotal * 100 : 0;
+        const comparison = previousTotal ? `${change > 0 ? "+" : ""}${Math.round(change)}%` : total ? "New" : "0%";
+        const trend = Array.from({ length: 6 }, (_, index) => {
+          const monthDate = new Date(Number(selectedMonth.slice(0, 4)), Number(selectedMonth.slice(5, 7)) - 1 + index - 5, 1);
+          const month = dateKey(monthDate).slice(0, 7);
+          const amount = expensesForMonth(month).reduce((sum, item) => sum + Number(item.amount), 0);
+          return { month, amount, label: monthDate.toLocaleDateString("en-US", { month: "short" }) };
+        });
+        const maxTrend = Math.max(1, ...trend.map((item) => item.amount));
+        const reportTotals = Object.keys(categories).map((name) => ({ name, total: items.filter((item) => item.category === name).reduce((sum, item) => sum + Number(item.amount), 0) })).filter((item) => item.total > 0).sort((a, b) => b.total - a.total);
+
+        $("report-total").textContent = money(total);
+        $("report-expense-count").textContent = `${items.length} ${items.length === 1 ? "expense" : "expenses"}`;
+        $("report-previous").textContent = money(previousTotal);
+        $("report-previous-label").textContent = formatMonth(previousMonth);
+        $("report-change").textContent = comparison;
+        $("report-change").style.color = change > 0 ? "#c7614f" : change < 0 ? "var(--green)" : "var(--ink)";
+        $("trend-period").textContent = formatMonth(selectedMonth);
+        $("report-category-period").textContent = `Spending in ${formatMonth(selectedMonth)}`;
+        $("monthly-trend").innerHTML = trend.map((item, index) => {
+          const current = item.month === selectedMonth;
+          const barHeight = item.amount ? Math.max(5, item.amount / maxTrend * 100) : 0;
+          const color = current ? "var(--green)" : index % 2 ? "#e5bf48" : "#f18066";
+          return `<div class="report-month" aria-label="${formatMonth(item.month)}: ${money(item.amount)}"><div class="report-bar-track"><span class="report-bar" style="--bar-height:${barHeight}%;--bar-color:${color}"></span></div><span class="report-month-label">${item.label}</span></div>`;
+        }).join("");
+        $("monthly-trend").setAttribute("aria-label", `Six-month spending: ${trend.map((item) => `${formatMonth(item.month)} ${money(item.amount)}`).join(", ")}`);
+        $("report-categories").innerHTML = reportTotals.length ? reportTotals.map((item) => {
+          const percentage = total ? item.total / total * 100 : 0;
+          return `<div><div class="report-category-head"><span class="report-category-name"><span class="legend-dot" style="background:${categories[item.name].color}"></span>${item.name}</span><span class="report-category-total">${money(item.total)} <span class="panel-subtitle">${Math.round(percentage)}%</span></span></div><div class="report-category-track"><div class="report-category-fill" style="width:${percentage}%;background:${categories[item.name].color}"></div></div></div>`;
+        }).join("") : '<div class="empty-state">No expenses recorded for this month yet.</div>';
+        if (reportTotals.length) {
+          const topCategory = reportTotals[0];
+          $("report-insight-title").textContent = `${topCategory.name} is your biggest category`;
+          $("report-insight-copy").textContent = `${money(topCategory.total)} of ${money(total)} this month, or ${Math.round(topCategory.total / total * 100)}% of your spending. ${previousTotal ? `Total spending is ${change <= 0 ? "down" : "up"} ${Math.abs(Math.round(change))}% from ${formatMonth(previousMonth)}.` : "Keep logging expenses to see month-to-month trends."}`;
+        } else {
+          $("report-insight-title").textContent = "Your month at a glance";
+          $("report-insight-copy").textContent = "Add an expense to start building a picture of your spending.";
+        }
+      }
+
+      function renderGoals() {
+        const totalSaved = goals.reduce((sum, goal) => sum + Number(goal.saved || 0), 0);
+        const totalTarget = goals.reduce((sum, goal) => sum + Number(goal.target || 0), 0);
+        const remaining = Math.max(0, totalTarget - totalSaved);
+        const completed = goals.filter((goal) => Number(goal.saved) >= Number(goal.target)).length;
+        $("goals-total-saved").textContent = money(totalSaved);
+        $("goal-saved-stat").textContent = money(totalSaved);
+        $("goal-remaining-stat").textContent = money(remaining);
+        $("goal-count-stat").textContent = String(goals.length);
+        $("goal-completed-foot").textContent = completed ? `${completed} ${completed === 1 ? "goal" : "goals"} reached` : "Start with one thing you want";
+        if (!goals.length) {
+          $("goal-list").innerHTML = '<div class="goal-empty"><div class="goal-empty-mark" aria-hidden="true">🌱</div><h2>Give a little dream a name.</h2><p>Create your first savings goal, then add contributions as you go. Your progress stays saved in this browser.</p><button class="save-button" type="button" data-open-goal>Create a savings goal</button></div>';
+          return;
+        }
+        $("goal-list").innerHTML = goals.map((goal, index) => {
+          const target = Number(goal.target);
+          const saved = Number(goal.saved || 0);
+          const percentage = target > 0 ? saved / target * 100 : 0;
+          const deadline = goal.deadline ? `Target ${new Date(`${goal.deadline}T12:00:00`).toLocaleDateString("en-US", { month: "short", year: "numeric" })}` : "No target date";
+          const finished = percentage >= 100;
+          return `<article class="goal-card" style="animation-delay:${Math.min(index, 5) * 30}ms"><div class="goal-card-head"><span class="goal-card-icon" aria-hidden="true">${escapeHtml(goal.icon || "🌱")}</span><div class="goal-card-title"><h3>${escapeHtml(goal.name)}</h3><span>${finished ? "Goal reached" : deadline}</span></div><button class="goal-delete" type="button" data-goal-delete="${escapeHtml(goal.id)}" aria-label="Delete ${escapeHtml(goal.name)}">×</button></div><div class="goal-progress-copy"><strong>${money(saved)}</strong><span>of ${money(target)}</span></div><div class="goal-progress-track" role="progressbar" aria-label="${escapeHtml(goal.name)} progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.min(100, Math.round(percentage))}"><div class="goal-progress-fill" style="width:${Math.min(100, percentage)}%;background:${finished ? "#e5bf48" : "var(--green)"}"></div></div><form class="goal-fund-form" data-goal-fund="${escapeHtml(goal.id)}"><input class="goal-contribution" type="number" min="0.01" step="0.01" placeholder="Add a contribution" aria-label="Contribution for ${escapeHtml(goal.name)}" required><button type="submit">Add funds</button></form></article>`;
+        }).join("");
+      }
+
       function openModal() {
         $("modal-backdrop").classList.add("open");
         $("expense-date").value = dateKey(new Date());
@@ -418,11 +600,27 @@
         $("expense-date").value = dateKey(new Date());
       }
 
-      $("open-modal").addEventListener("click", openModal);
+      function openGoalModal() {
+        $("goal-modal-backdrop").classList.add("open");
+        setTimeout(() => $("goal-name").focus(), 0);
+      }
+      function closeGoalModal() {
+        $("goal-modal-backdrop").classList.remove("open");
+        $("goal-form").reset();
+      }
+
+      $("primary-action").addEventListener("click", () => location.hash.slice(1) === "goals" ? openGoalModal() : openModal());
       $("close-modal").addEventListener("click", closeModal);
       $("cancel-modal").addEventListener("click", closeModal);
+      $("close-goal-modal").addEventListener("click", closeGoalModal);
+      $("cancel-goal-modal").addEventListener("click", closeGoalModal);
       $("modal-backdrop").addEventListener("click", (event) => { if (event.target === $("modal-backdrop")) closeModal(); });
-      document.addEventListener("keydown", (event) => { if (event.key === "Escape" && $("modal-backdrop").classList.contains("open")) closeModal(); });
+      $("goal-modal-backdrop").addEventListener("click", (event) => { if (event.target === $("goal-modal-backdrop")) closeGoalModal(); });
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") return;
+        if ($("modal-backdrop").classList.contains("open")) closeModal();
+        if ($("goal-modal-backdrop").classList.contains("open")) closeGoalModal();
+      });
       $("expense-form").addEventListener("submit", (event) => {
         event.preventDefault();
         const form = new FormData(event.currentTarget);
@@ -437,6 +635,19 @@
         render();
         closeModal();
         toast("Expense added. Nice and tidy.");
+      });
+      $("goal-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = new FormData(event.currentTarget);
+        const target = Number(form.get("target"));
+        const name = String(form.get("name")).trim();
+        if (!name || !Number.isFinite(target) || target <= 0) return;
+        const icons = ["🌱", "✈️", "🏡", "🎓", "✨", "🚲"];
+        goals.push({ id: makeId(), name, target, saved: 0, deadline: String(form.get("deadline") || ""), icon: icons[goals.length % icons.length] });
+        persistGoals();
+        renderGoals();
+        closeGoalModal();
+        toast("Savings goal created.");
       });
       $("month-picker").addEventListener("change", (event) => { if (event.target.value) { selectedMonth = event.target.value; render(); } });
       $("search").addEventListener("input", renderTransactions);
@@ -458,12 +669,57 @@
         render();
         toast("Expense removed.");
       });
-      document.querySelectorAll(".nav a").forEach((link) => link.addEventListener("click", () => {
-        document.querySelectorAll(".nav a").forEach((item) => item.classList.remove("active"));
-        link.classList.add("active");
-      }));
+      $("goal-list").addEventListener("submit", (event) => {
+        const form = event.target.closest("[data-goal-fund]");
+        if (!form) return;
+        event.preventDefault();
+        const amount = Number(form.querySelector(".goal-contribution").value);
+        const goal = goals.find((item) => String(item.id) === form.dataset.goalFund);
+        if (!goal || !Number.isFinite(amount) || amount <= 0) return;
+        goal.saved = Number(goal.saved || 0) + amount;
+        persistGoals();
+        renderGoals();
+        toast("Contribution added to your goal.");
+      });
+      $("goal-list").addEventListener("click", (event) => {
+        if (event.target.closest("[data-open-goal]")) {
+          openGoalModal();
+          return;
+        }
+        const button = event.target.closest("[data-goal-delete]");
+        if (!button) return;
+        goals = goals.filter((goal) => String(goal.id) !== button.dataset.goalDelete);
+        persistGoals();
+        renderGoals();
+        toast("Savings goal removed.");
+      });
+      function navigate() {
+        const route = location.hash.slice(1);
+        const page = route === "reports" || route === "goals" ? route : "overview";
+        const activeRoute = ["transactions", "budget", "reports", "goals"].includes(route) ? route : "overview";
+        const pageDetails = {
+          overview: { eyebrow: "YOUR MONEY, YOUR RHYTHM", title: "Good things, accounted for." },
+          reports: { eyebrow: "A CLEARER PICTURE", title: "Your spending, in perspective." },
+          goals: { eyebrow: "PLANS FOR WHAT MATTERS", title: "Little by little, it adds up." }
+        };
+        document.querySelectorAll("[data-page-view]").forEach((view) => { view.hidden = view.dataset.pageView !== page; });
+        document.querySelectorAll(".nav a[data-page]").forEach((link) => { link.classList.toggle("active", link.dataset.page === activeRoute); });
+        $("page-eyebrow").textContent = pageDetails[page].eyebrow;
+        $("page-title").textContent = pageDetails[page].title;
+        $("month-picker").closest(".month-picker").classList.toggle("hidden", page === "goals");
+        $("primary-label").textContent = page === "goals" ? "New goal" : "Add expense";
+        $("primary-action").setAttribute("aria-label", page === "goals" ? "New goal" : "Add expense");
+        document.title = `${page === "overview" ? "Pocketful" : page === "reports" ? "Reports" : "Savings Goals"} — Personal Expense Tracker`;
+        if (route === "transactions" || route === "budget") {
+          requestAnimationFrame(() => $(route).scrollIntoView({ block: "start", behavior: "smooth" }));
+        } else {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+      window.addEventListener("hashchange", navigate);
       persist();
       render();
+      navigate();
     })();
   </script>
 </body>
